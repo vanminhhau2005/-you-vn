@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 5 Example</title>
+    
+    <!-- Thêm Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Thêm Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Header với nền màu xanh -->
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+     
+    <!-- Nội dung chính gồm 3 cột -->
+    <div class="container mt-5"> <!--căn giữa trang  mt-5> tạo khoảng cách  -->
+        <!-- Dòng chứa các cột bên trong -->
+        <div class="row">
+            <div class="col-sm-4"> <!--được dùng để tạo một cột chiếm 1/3 chiều rộngg-->
+                <h3>Column 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+        </div> 
+    </div>
+    <br>
+    <br>
+    <br>
+    <div style="text-align: center;">
+        <b>1 Thêm Bootstrap CSS
+        Thêm Bootstrap JavaScript   
+        </b>
+      </div>
+      <br>
+    <!--***************************************vùng chứa***************************************-->
+    <!-- container-fluid là một vùng chứa toàn màn hình -->
+    <div class="container-fluid">
+        <div class="container bg-danger text-white p-3">
+            <!--container bg-danger text-white p-3 Vùng chứa nền màu đỏ -->
+            <h1>My First Bootstrap Page</h1>
+            <p>This part is inside a .container-fluid class.</p>
+            <p>The .container-fluid class provides a full-width container, spanning the entire width of the viewport.</p>
+        </div>
+    </div>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: center;">
+        <b>2 vùng chứa</b>
+      </div>
+      <!--tạo khoản cách với các vùng chứa và màu khác nhau-->
+      <div class="container p-8 my-8 border">
+        <!-- Container có viền và khoảng cách -->
+        
+        <!-- Vùng chứa với nền màu đen -->
+        <div class="container p-5 my-5 bg-dark text-white"></div>
+        
+        <!-- Vùng chứa với nền màu xanh dương -->
+        <div class="container p-5 my-5 bg-primary text-white"></div>
+
+        <h1>My First Bootstrap Page</h1>
+        <p>This container has a border and some extra padding and margins.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div style="text-align: center;">
+        <b>3 2 vùng chứa</b>
+      </div>
+    <!--+++++++++++++++++++++++++++lưới***************************************-->
+    <div class="container pt-3">
+        <h1>Responsive Containers</h1>
+        <p>Resize the browser window to see the effect.</p>
+    </div>
+    
+    <div class="container-sm border mt-3">.container-sm</div>  <!-- Kích thước nhỏ -->
+    <div class="container-md border mt-3">.container-md</div>  <!-- Trung bình -->
+    <div class="container-lg border mt-3">.container-lg</div>  <!-- Lớn -->
+    <div class="container-xl border mt-3">.container-xl</div>  <!-- Rất lớn -->
+    <div class="container-xxl border mt-3">.container-xxl</div> <!-- Rất rất lớn -->
+    <br>
+    <br>
+    <br>
+    <div style="text-align: center;">
+        <b>4 vùng chứa kính thước</b>
+      </div>
+    <!--vd tạo các cột -->
+    <div class="container mt-5">
+        <h2>Hệ thống lưới Bootstrap</h2>
+        <p>Tạo một hàng trong hệ thống lưới Bootstrap. Mỗi hàng có thể chứa tối đa 12 cột.</p>
+        
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+        </div>
+    
+        <div class="row mt-3">
+            <div class="col">A</div>
+            <div class="col">B</div>
+            <div class="col">C</div>
+        </div>
+    
+        <div class="row mt-3">
+            <div class="col">X</div>
+            <div class="col">Y</div>
+            <div class="col">Z</div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: center;">
+        <b>5 cột</b>
+      </div>
+      <!--tạo 3 cột xanh đen có kích thước bằng nhau-->
+      <div class="container-fluid mt-3"> <!-- vùng chứa mt-3 để thêm khoảng cách phía trên. -->
+        <h1>Three equal width columns</h1>
+        <p>Note: Try to add a new div with class="col-" inside the row class - this will create four equal-width columns.</p>
+        <div class="row">
+            <div class="col p-3 bg-primary text-white">.col</div>
+            <div class="col p-3 bg-dark text-white">.col</div>
+            <div class="col p-3 bg-primary text-white">.col</div>
+        </div>
+        <!-- Cột (.col): Mỗi cột có lớp p-3 (padding), bg-primary (nền xanh dương), bg-dark (nền đen), và text-white (chữ trắng) để hiển thị đẹp mắt. -->
+     </div>
+     <br>
+     <br>
+     <br>
+     <div style="text-align: center;">
+        <b>6 tạo 3 cột màu sắc</b>
+      </div>
+      <!--tạo 4 cột xanh đen có kích thước bằng nhau -->
+      <div class="container-fluid mt-3">
+        <h1>Responsive Columns</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+        
+        <div class="row"> <!-- tạo hàng chứa cột -->
+            <div class="col-sm-3 p-3 bg-primary text-white">.col</div> 
+            <div class="col-sm-3 p-3 bg-dark text-white">.col</div> 
+            <div class="col-sm-3 p-3 bg-primary text-white">.col</div> 
+            <div class="col-sm-3 p-3 bg-dark text-white">.col</div> 
+        </div>
+        <!-- cột đáp ứng: Khi màn hình nhỏ hơn 576px, các cột tự động xếp chồng lên nhau, tạo màu nền xanh và đen. -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <div style="text-align: center;">
+        <b>7 tạo 4 cột có kích thước bằng nhau </b>
+      </div>
+    <!--tạo cột đen có kích thước dài hơn cột xanh -->
+    <div class="container-fluid mt-3">
+        <h1>Two Unequal Responsive Columns</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+        
+        <div class="row">
+            <div class="col-sm-4 p-3 bg-primary text-white">.col</div> 
+            <div class="col-sm-8 p-3 bg-dark text-white">.col</div> 
+        </div>
+        
+        <!-- col-sm-4: Cột này chiếm 4/12 chiều rộng -->
+        <!-- col-sm-8: Cột này chiếm 8/12 chiều rộng -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <div style="text-align: center;">
+        <b>8 cột có kích thước ngắn và dài</b>
+      </div>
+    <!--********************************************************văn bản kiểu chữ********************************************************-->
+    <!--dùng h1 đến h6 -->
+    <div class="container mt-3">
+        <p class="h1">h1 Bootstrap heading</p><!--kiểu chữ từ lớn đến nhỏ -->
+        <p class="h2">h2 Bootstrap heading</p>
+        <p class="h3">h3 Bootstrap heading</p>
+        <p class="h4">h4 Bootstrap heading</p>
+        <p class="h5">h5 Bootstrap heading</p>
+        <p class="h6">h6 Bootstrap heading</p>
+      </div>
+      <br>
+      <br>
+      <br><div style="text-align: center;">
+        <b>9 kiểu chữ</b>
+      </div>
+      <!--kiểu chữ  display h1 đến h6-->
+      <div class="container mt-3">
+        <h1>Display Headings</h1>
+        <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):</p>
+        <h1 class="display-1">Display 1</h1> <!-- display kiểu chữ tiêu đề đậm đến nhạc -->
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+        <h1 class="display-5">Display 5</h1>
+        <h1 class="display-6">Display 6</h1>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: center;">
+        <b>10 kiểu chữ đậm nhạt</b>
+      </div>
+      <!-- kiểu chữ secondary text-->
+      <div class="container mt-3">
+        <h1>Smaller, Secondary Text</h1>
+        <p>The small element (and the .small class) is used to create a smaller, secondary text in any heading:</p>       
+        <h1>h1 heading <small>secondary text</small></h1>
+        <h2>h2 heading <small>secondary text</small></h2>
+        <h3>h3 heading <small>secondary text</small></h3><!-- small hiển thị văn bản phụ nhỏ h1-h6 kích thước nhỏ hơn-->
+        <h4>h4 heading <small>secondary text</small></h4>
+        <h5>h5 heading <small>secondary text</small></h5>
+        <h6>h6 heading <small>secondary text</small></h6>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: center;">
+        <b>11 hiển thị các văn bản nhỏ </b>
+      </div>
+      <!--tô đậm chữ-->
+      <div class="container mt-3">
+        <h1>Highlight Text</h1>    
+        <p>Use the mark element (or the .mark class) to <mark>highlight</mark> text.</p><!--Bootstrap 5 sẽ tạo kiểu <mark>với .markmàu nền vàng và một số phần đệm:-->
+      </div>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: center;">
+        <b>12 in đậm</b>
+      </div>
+    <!--chỉ dẫn chấm hỏi ở chữ who-->     
+    <div class="container mt-3">
+        <h1>Abbreviations</h1>
+        <p>The abbr element is used to mark up an abbreviation or acronym:</p>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p><!--Bootstrap 5 sẽ định dạng phần tử HTML <abbr>với đường viền chấm bi ở dưới và con trỏ có dấu chấm hỏi khi di chuột qua:
+          -->
+      </div>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: center;">
+        <b>13 tạo kí tự khi nhấn vào chữ ?</b>
+      </div>
+      <!--trích dẫn nội dung đến nguồn khác-->
+      <div class="container mt-3">
+        <h1>Blockquotes</h1>
+        <p>The blockquote element is used to present content from another source:</p>
+        <blockquote class="blockquote">
+          <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 2 million members in the United States and close to 5 million globally.</p>
+          <footer class="blockquote-footer">From WWF's website</footer> <!--Thêm .blockquotelớp vào a <blockquote>khi trích dẫn các khối nội dung từ một nguồn khác. Và khi đặt tên cho một nguồn, như "từ trang web của WWF", hãy sử dụng .blockquote-footerlớp:-->
+        </blockquote>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: center;">
+        <b>14 trích dẫn</b>
+      </div>
+      <!--in đậm và in thường -->
+      <div class="container mt-3">
+        <h1>Description Lists</h1>    
+        <p>The dl element indicates a description list:</p>
+        <dl>
+          <dt>Coffee</dt>
+          <dd>- black hot drink</dd>
+          <dt>Milk</dt>
+          <dd>- white cold drink</dd> <!----->
+        </dl>     
+        <!--chữ màu -->
+      </div>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: center;">
+        <b>15 gạch đầu hàng</b>
+      </div>
+      <div class="container mt-3">
+        <h1>Code Snippets</h1>
+        <p>Inline snippets of code should be embedded in the code element:</p>
+        <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: center;">
+        <b>15 làm nổi bật chữ</b>
+      </div>
+      <!--bôi đen chữ -->
+      <div class="container mt-3">
+        <h1>Keyboard Inputs</h1>
+        <p>To indicate input that is typically entered via the keyboard, use the kbd element:</p>
+        <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p> <!--<kbd> để bôi đen-->
+      </div>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: center;">
+        <b>16 bôi đen</b>
+      </div>
+      <!--hiển thị kiểu chữ -->
+      <div class="container mt-3">
+        <h1>Multiple Code Lines</h1>
+        <p>For multiple lines of code, use the pre element:</p>
+        <pre>
+        Text in a pre element<!--pre để hiển thị kiểu chữ -->
+        is displayed in a fixed-width
+        font, and it preserves
+        both      spaces and
+        line breaks.
+        </pre>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div style="text-align: center;">
+            <b>17 kiểu chữ</b>
+<!--************************************************màu**********************************************-->
+<div class="container mt-3">
+    <h2>Contextual Colors</h2>
+    <p>Use the contextual classes to provide "meaning through colors":</p>
+    <p class="text-muted">This text is muted.</p>
+    <p class="text-primary">This text is important.</p>
+    <p class="text-success">This text indicates success.</p> 
+    <p class="text-info">This text represents some information.</p>
+    <p class="text-warning">This text represents a warning.</p>
+    <p class="text-danger">This text represents danger.</p>
+    <p class="text-secondary">Secondary text.</p>
+    <p class="text-dark">This text is dark grey.</p>
+    <p class="text-body">Default body color (often black).</p>
+    <p class="text-light">This text is light grey (on white background).</p>
+    <p class="text-white">This text is white (on white background).</p>
+  </div>
+        <br>
+        <br>
+        <div style="text-align: center;">
+            <b>18 màu</b>
+     <!--độ mờ -->
+     <div class="container mt-3">
+        <h2>Opacity Text Colors</h2>
+        <p>Add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:</p>
+        <p class="text-black-50">Black text with 50% opacity on white background</p>
+        <p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
+      </div>
+         <br>
+        <br>
+      <div style="text-align: center;">
+            <b>19 độ mờ</b>
+        <!--cột màu sắc -->
+        <div class="container mt-3">
+            <h2>Contextual Backgrounds</h2>
+            <p>Use the contextual background classes to provide "meaning through colors".</p>
+            <div class="bg-primary p-3"></div>
+            <div class="bg-success p-3"></div>
+            <div class="bg-info p-3"></div>
+            <div class="bg-warning p-3"></div>
+            <div class="bg-danger p-3"></div>
+            <div class="bg-secondary p-3"></div>
+            <div class="bg-dark p-3"></div>
+            <div class="bg-light p-3"></div>
+          </div>
+          <br>
+        <br>
+        <div style="text-align: center;">
+            <b><b> 20 cột màu </b></b>
+        <!--tự động xử lí văn bản phù hợp với màu -->
+        <div class="container mt-3">
+            <h2>Background Color with Contrasting Text Color</h2>
+            <p class="text-bg-primary">This text is important.</p>
+            <p class="text-bg-success">This text indicates success.</p>
+            <p class="text-bg-info">This text represents some information.</p>
+            <p class="text-bg-warning">This text represents a warning.</p>
+            <p class="text-bg-danger">This text represents danger.</p>
+            <p class="text-bg-secondary">Secondary background color.</p>
+            <p class="text-bg-dark">Dark grey background color.</p>
+            <p class="text-bg-light">Light grey background color.</p>
+          </div>
+          <br>
+          <br>
+          <div style="text-align: center;">
+              <b><b> 21 tự động xử lí văn bản phù hợp với màu  </b></b>
+              <!--bảng -->
+              <div class="container mt-3">
+                <h2>Basic Table</h2>
+                <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>            
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>tên</th>
+                      <th>họ</th>
+                      <th>Email</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Châu</td>
+                      <td>Bùi</td>
+                      <td>chau@gmail.com</td>
+                    </tr>
+                    <tr>
+                      <td>Huấn</td>
+                      <td>Bùi</td>
+                      <td>huan@ehuan.com</td>
+                    </tr>
+                    <tr>
+                      <td>Bịp</td>
+                      <td>Tiến</td>
+                      <td>bịp@example.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <br>
+              <div style="text-align: center;">
+                  <b><b> 22 bảng   </b></b>  
+                  <!--hàng sọc -->
+                  <div class="container mt-3">
+                    <h2>Striped Rows</h2>
+                    <p>The .table-striped class adds zebra-stripes to a table:</p>            
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Firstname</th>
+                          <th>Lastname</th>
+                          <th>Email</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>John</td>
+                          <td>Doe</td>
+                          <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>Mary</td>
+                          <td>Moe</td>
+                          <td>mary@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>July</td>
+                          <td>Dooley</td>
+                          <td>july@example.com</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <br>
+              <br>
+              <div style="text-align: center;">
+                  <b><b> 23 hàng sọc   </b></b>  
+            <!--viền .-->
+            <div class="container mt-3">
+                <h2>Bordered Table</h2>
+                <p>The .table-bordered class adds borders on all sides of the table and the cells:</p>            
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Firstname</th>
+                      <th>Lastname</th>
+                      <th>Email</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>Moe</td>
+                      <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>July</td>
+                      <td>Dooley</td>
+                      <td>july@example.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <br>
+              <div style="text-align: center;">
+                  <b><b> viền    </b></b>  
+            <!-- Thêm Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
